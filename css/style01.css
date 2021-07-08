@@ -1,0 +1,59 @@
+/* CSS Document*/
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+.imgFull{
+   width: 100%;
+   height: auto;
+}
+.h3View{
+   font-size: 3vw;
+}
+.h3Rem{
+   font-size: 2rem;
+}
+
+div{
+   box-sizing: border-box;
+   padding: 20px;
+}
+.izq{
+   background-color: cadetblue;
+   float: left;
+   width: 20%;
+}
+.centro{
+   background-color: beige;
+   float:left;
+   width: 60%;
+}
+.der{
+   background-color: forestgreen;
+   float: left;
+   width: 20%;
+}
+
+@media screen and (max-width: 500px) {
+   .izq, .der, .centro{
+      width: 100%;
+   }
+}
+@media screen and (max-width: 350px) {
+   .izq, .der, .centro{
+      width: 100%;
+   }
+   .der{
+      display: none;
+   }
+}
+
+@media print{
+   .izq, .der, .centro{
+      display: none;
+   }
+   h3{
+      display: none;
+   }
+}
